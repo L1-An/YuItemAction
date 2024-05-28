@@ -1,0 +1,5 @@
+prefix: "&3Yu&bItemAction &7|"
+
+command-reload: "{prefix} &aPlugin has been reloaded successfully"
+debug: "{prefix} &aDebug mode has been toggled - {status}"
+plan-count: "{prefix} &aLoaded &e{count}&a item action plans"

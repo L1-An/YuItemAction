@@ -1,0 +1,5 @@
+prefix: "&3Yu&bItemAction &7|"
+
+command-reload: "{prefix} &a插件已重载成功"
+debug: "{prefix} &a已切换debug模式 - {status}"
+plan-count: "{prefix} &a已加载 &e{count} &a个物品动作计划"

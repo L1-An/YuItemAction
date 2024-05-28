@@ -1,0 +1,31 @@
+example-default: # unique key, don't duplicate
+  # match method
+  # default / nbt
+  match: default
+  # when an item has the name "Example", it will be matched with this plan
+  name: "Example"
+  # when an item has the lore "[example]" and "food", it will be matched with this plan
+  lore:
+    - "[example]"
+    - "food"
+  action:
+    # when these action is triggered, the action will be executed
+    # optional:
+    # - on-left
+    # - on-right
+    # - on-shift-left
+    # - on-shift-right
+    # - on-switch
+    # - on-drop
+    on-right: |-
+      tell color "&aYou have eaten an example food."
+      item consume
+
+example-nbt:
+  match: nbt
+  # when an item has the nbt tag "@plan_name = example", it will be matched with this plan
+  tag: "example-skill"
+  action:
+    on-right: |-
+      tell color "&aYou have used an example skill."
+      item consume
