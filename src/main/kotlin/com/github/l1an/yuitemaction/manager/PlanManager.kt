@@ -2,7 +2,7 @@ package com.github.l1an.yuitemaction.manager
 
 import com.github.l1an.yuitemaction.YuItemAction.messagePrefix
 import com.github.l1an.yuitemaction.holder.ActionPlan
-import org.serverct.parrot.parrotx.feature.sendInfo
+import org.serverct.parrot.parrotx.function.sendInfo
 import org.serverct.parrot.parrotx.mechanism.Reloadable
 import org.serverct.parrot.parrotx.util.files
 import taboolib.common.LifeCycle

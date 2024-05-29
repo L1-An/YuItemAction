@@ -1,3 +1,7 @@
 settings:
   # when an item has the specific NBT tag, it will be matched with the plan
   tag: "@plan-name"
+
+update:
+  check: true
+  notify: true

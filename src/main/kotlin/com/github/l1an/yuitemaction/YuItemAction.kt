@@ -1,8 +1,9 @@
 package com.github.l1an.yuitemaction
 
 import com.github.l1an.yuitemaction.utils.releaseResource
-import org.serverct.parrot.parrotx.feature.sendInfo
+import org.serverct.parrot.parrotx.function.sendInfo
 import org.serverct.parrot.parrotx.update.GithubUpdateChecker
+import org.serverct.parrot.parrotx.update.UpdateManager
 import taboolib.common.platform.Platform
 import taboolib.common.platform.Plugin
 import taboolib.common.platform.function.pluginVersion
@@ -22,16 +23,11 @@ object YuItemAction : Plugin() {
         }
 
         releaseResource()
+    }
 
-        GithubUpdateChecker("l1-an", "YuItemAction").getVersion { version ->
-            if (pluginVersion == version) {
-                sendInfo("$messagePrefix &cThere is not a new update available.")
-            } else {
-                sendInfo {
-                    +"$messagePrefix &aThere is a new update($version) available at:"
-                    +"&ahttps://github.com/L1-An/YuItemAction/releases/latest"
-                }
-            }
+    override fun onActive() {
+        if (UpdateManager.checkUpdate) {
+            GithubUpdateChecker("L1-An", "YuItemAction").check()
         }
     }
 }

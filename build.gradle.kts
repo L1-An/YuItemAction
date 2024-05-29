@@ -37,7 +37,7 @@ dependencies {
     compileOnly("com.google.code.gson:gson:2.8.7")
     compileOnly(kotlin("stdlib"))
     compileOnly(fileTree("libs"))
-    taboo(files("libs/module-parrotx-1.5.5-6.jar"))
+    taboo(files("libs/module-parrotx-1.5.5-8.jar"))
 }
 
 tasks.withType<JavaCompile> {
