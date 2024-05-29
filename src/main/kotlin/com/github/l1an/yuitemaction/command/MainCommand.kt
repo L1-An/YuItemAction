@@ -12,7 +12,7 @@ import taboolib.expansion.createHelper
     name = "yuitemaction",
     aliases = ["yia", "ia", "itemaction", "itema"],
     permission = "yuitemaction.command.use",
-permissionDefault = PermissionDefault.TRUE
+    permissionDefault = PermissionDefault.TRUE
 )
 object MainCommand {
 
