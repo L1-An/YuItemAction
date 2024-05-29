@@ -14,6 +14,7 @@ taboolib {
         install(BUKKIT_ALL)
         install(UNIVERSAL)
         install(KETHER)
+        install(METRICS)
     }
     description {
         name = "YuItemAction"

@@ -13,10 +13,11 @@ example-default: # unique key, don't duplicate
     # optional:
     # - on-left
     # - on-right
-    # - on-shift-left
-    # - on-shift-right
-    # - on-switch
+    # - on-swap
+    # - on-swap-to-offhand
+    # - on-swap-to-mainhand
     # - on-drop
+    # - on-break
     on-right: |-
       tell color "&aYou have eaten an example food."
       item consume
