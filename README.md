@@ -1,3 +1,5 @@
+![Logo](https://raw.githubusercontent.com/L1-An/YuItemAction/main/.github/images/logo.png)
+
 # YuItemAction
 
 ![GitHub Release](https://img.shields.io/github/v/release/L1-An/YuItemAction?style=for-the-badge&logo=VirusTotal)
@@ -7,8 +9,6 @@
 ![wakatime](https://wakatime.com/badge/github/L1-An/YuItemAction.svg)
 
 > A simple plugin tor custom item actions.
-
-SoftDependency: `Zaphkiel` or `MMOItems`
 
 ## Powered by TabooLib6
 * [TabooLib6](https://github.com/TabooLib/taboolib)
